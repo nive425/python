@@ -1,0 +1,9 @@
+def isvowel(n):
+    count=0
+    for i in range (len(n)):
+        if n[i].upper() in ['A','E','I','O','U']:
+            print(n[i],end =" ")
+            count += 1
+    return count    
+n="aabe"
+print(isvowel(n))
