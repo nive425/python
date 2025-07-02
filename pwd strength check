@@ -1,0 +1,21 @@
+n=(input("enter the pwd:"))
+up=0
+sm=0
+dg=0
+sp=0
+if(len(n)>7):
+    for char in n:
+        if(char.isupper()):
+            up += 1
+        elif(char.islower()):
+            sm += 1
+        elif(char.isdigit()):
+            dg += 1
+        else:
+            sp += 1
+    if(up>0 and sp>0 and dg>0 and sp>0):
+        print("pwd is strong")
+    else:
+        print("pwd is weak")       
+else:
+    print("pwd length is short")
