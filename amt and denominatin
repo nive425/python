@@ -1,0 +1,7 @@
+coins=[500,200,100,50,20,2,1]
+amt=int(input("enter the amount:"))
+for i in coins:
+    while amt >= i:
+        print(i ,end=" ")
+        amt=amt-i
+        
