@@ -2,5 +2,6 @@ import random
 nums=[]
 while (len(nums) !=5):
     d=random.randint(1,10)
-    nums.append(d)
+    if d not in nums:
+        nums.append(d)
 print(nums)
