@@ -1,0 +1,2 @@
+str=input("enter the string to be reversed:")
+print(str[::-1])
