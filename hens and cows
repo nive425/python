@@ -1,0 +1,12 @@
+h=int(input("enter the no of heads:"))
+l=int(input("enter the no of legs:"))
+flag=False
+for hen in range (h+1):
+    cow=h-hen
+    if cow*4+hen*2==l:
+        flag=True
+        break
+if (flag):
+    print(f"cows:{cow} hen:{hen}")
+else:
+    print("no solution")
